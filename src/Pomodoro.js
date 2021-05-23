@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react'
 export default function Pomodoro(){
 
     //Here you can definite time
-    const [minutes, setMinutes] = useState(0)
+    const [minutes, setMinutes] = useState(50)
     const [seconds, setSeconds] = useState(5)
     const [displayMessage, setDisplayMessage] = useState(false)
 
@@ -21,7 +21,7 @@ export default function Pomodoro(){
 
                     setSeconds(seconds);
                     setMinutes(minutes);
-                    setDisplayMessage(!displayMessage)
+                    setDisplayMessage(!displayMessage);
                 }
             }else{
                 setSeconds(seconds - 1);
